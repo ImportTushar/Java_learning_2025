@@ -1,4 +1,4 @@
-package Nestedloop;
+package nestedloop;
 
     public class invertedstarpattern {
         public static void main(String[] args) {
