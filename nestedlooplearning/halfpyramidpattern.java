@@ -1,4 +1,4 @@
-package nestedloop;
+package nestedlooplearning;
 
     public class halfpyramidpattern{
         public static void main(String[] args){

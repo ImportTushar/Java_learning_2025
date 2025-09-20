@@ -1,4 +1,4 @@
-package loopQuestions;
+package loopQuestionslearning;
     import java.util.Scanner;
 
     public class factorialfinder {

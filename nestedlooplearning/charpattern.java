@@ -1,4 +1,4 @@
-package nestedloop;
+package nestedlooplearning;
 
     public class charpattern {
         public static void main(String[] args) {

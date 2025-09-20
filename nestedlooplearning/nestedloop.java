@@ -1,4 +1,4 @@
-package nestedloop;
+package nestedlooplearning;
 
 public class nestedloop {
     public static void main(String[] args) {
