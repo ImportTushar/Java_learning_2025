@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbfs/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbfs/Templates/Classes/Class.java to edit this template
  */
 
 /**
@@ -21,7 +21,6 @@ public class Prime_numbers_optimized {
 
     public static void main(String[] args) {
         int number = 29; // Example number to check
-        isPrime(number);    
+        isPrime(number);
     }
 }
-

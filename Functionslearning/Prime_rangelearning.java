@@ -30,15 +30,16 @@ public class Prime_rangelearning {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int start,end;
+        int start, end;
 
-        System.out.println("Enter The details for getting the prime number");
+        System.out.println("Enter the details for getting the prime numbers");
 
-        System.out.print("Enter your starting number: " );
+        System.out.print("Enter your starting number: ");
         start = sc.nextInt();
 
-        System.out.print("Enter your Ending Number");
+        System.out.print("Enter your ending number: ");
         end = sc.nextInt();
+
         primeRange(start, end);
     }
 }
