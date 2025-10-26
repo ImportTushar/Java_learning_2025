@@ -8,50 +8,57 @@ import java.util.*;
  *
  * @author TUSHAR GIRI
  */
-
 public class SubArrays {
-    public static void SubArrays(int list[], int startVal, int endVal) {
-
-        int start = -1, end = -1;
-
-        // Find the indices of the numbers in the list
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] == startVal) start = i;
-            if (list[i] == endVal) end = i;
-        }
-
-        // Check if both numbers exist in the list
-        if (start == -1 || end == -1) {
-            System.out.println("Invalid input! One or both numbers are not in the list.");
+    public static void SubArrays(int list[],int start,int end){
+        
+        if(start < 0 || end < 0 || start >= list.length || end >= list.length){
+            System.out.println("Invalid inputs please rewrite the numbers again" + (list.length - 1));
             return;
         }
 
-        // Ensure start < end
-        if (start > end) {
+
+
+        //Ensure the start < end one;
+        if (start > end){
             int temp = start;
             start = end;
             end = temp;
         }
 
-        // Print the subarray in one line
-        for (int i = start; i <= end; i++) {
-            System.out.print(list[i]);
-            if (i < end) System.out.print(".");
+
+        //print all Subarrays
+
+        for(int  i = start; i <= end; i++) {
+            for( int j = i ; j <= end; j++){
+                System.out.print("["); //brackers
+
+                for(int k = i ; k <= j; k++) {
+                    System.out.print(list[k]);
+
+                    if(k < j){
+                        System.out.print(", ");
+                    }
+                }
+
+                System.out.print("] ");
+            }
+            System.out.println();
         }
-        System.out.println();
+
     }
+
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc =  new Scanner(System.in);
+
         int list[] = {1,2,3,4,5,6,7,8,9,10,11};
 
-        System.out.print("Enter first number: ");
-        int num1 = sc.nextInt();
+        System.out.print("Enter your Start: ");
+        int start = sc.nextInt();
 
-        System.out.print("Enter second number: ");
-        int num2 = sc.nextInt();
+        System.out.print("Enter your end: ");
+        int end = sc.nextInt();
 
-        SubArrays(list, num1, num2);
+        SubArrays(list, start, end);
     }
 }
-
